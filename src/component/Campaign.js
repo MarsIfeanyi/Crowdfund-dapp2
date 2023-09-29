@@ -1,6 +1,6 @@
 import { formatEther } from "ethers";
 import React from "react";
-import { formatDate, shortenAccount } from "../utils";
+import { formatDate } from "../utils";
 import { Link } from "react-router-dom";
 
 const Campaign = ({ campaign }) => {
@@ -19,7 +19,7 @@ const Campaign = ({ campaign }) => {
           </p>
 
           <p className="mt-2 font-bold text-gray-500">
-            Contributors - {campaign.contributors}
+            Contributors - {campaign.contributors.length}
           </p>
         </div>
         <div className="flex flex-col gap-3 px-6 pt-2 pb-2">
